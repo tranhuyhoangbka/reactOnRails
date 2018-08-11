@@ -17,4 +17,6 @@ test:
 
 production:
   <<: *default
+  username:
+  password:
   database: ror_production
