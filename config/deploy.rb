@@ -15,7 +15,7 @@ set :deploy_via, :remote_cache
 set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
 # set :rvm_ruby, '2.4.0'
 set :rbenv_type, :user
-set :rbenv_ruby, '2.2.6'
+set :rbenv_ruby, '2.4.0'
 
 set :puma_role, :app
 set :puma_workers, 2
