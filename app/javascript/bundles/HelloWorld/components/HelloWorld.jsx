@@ -3,13 +3,13 @@ import React from 'react';
 
 const HelloWorld = ({ name, updateName }) => (
   <div>
-    <h3>
+    <h3 className="page-label">
       Hello, {name}!
     </h3>
     <hr />
     <form >
       <label htmlFor="name">
-        Say hello to:
+        Let's Say hello to:
       </label>
       <input
         id="name"
