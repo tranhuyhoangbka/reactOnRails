@@ -8,7 +8,7 @@ namespace :deploy do
       run_locally do
         execute"rsync -av ./public/assets/ deploy@#{role.hostname}:#{release_path}/public/assets/;"
       end
-      sudo "chmod -R 755 #{release_path}/public/assets/"
+      execute "chmod -R 755 #{release_path}/public/assets/"
     end
     run_locally do
       execute "rm -rf ./public/assets"
