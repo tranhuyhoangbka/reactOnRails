@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const HelloWorld = ({ name, updateName }) => (
+const HelloWorld = ({ name, updateName, deleteName }) => (
   <div>
     <h3 className="page-label">
       Hello, {name}!
@@ -17,6 +17,10 @@ const HelloWorld = ({ name, updateName }) => (
         value={name}
         onChange={(e) => updateName(e.target.value)}
       />
+      <br/>
+      <button type="button" onClick={deleteName}>
+        Delete
+      </button>
     </form>
   </div>
 );
