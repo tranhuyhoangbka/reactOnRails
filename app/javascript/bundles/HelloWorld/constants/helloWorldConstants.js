@@ -8,3 +8,8 @@ export const EDIT_POST = 'EDIT_POST';
 export const DEFAULT_ACTIVE_PAGE = 1;
 export const ITEMS_COUNT_PER_PAGE = 4;
 export const PAGE_RANGE_DISPLAYED = 5;
+// use with redux-thunk
+export const FETCHING_DATA = 'FETCHING_DATA'
+export const FETCHING_DATA_SUCCESS = 'FETCHING_DATA_SUCCESS'
+export const FETCHING_DATA_FAILURE = 'FETCHING_DATA_FAILURE'
+// user with redux-thunk
