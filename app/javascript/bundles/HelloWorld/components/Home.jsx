@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from 'react-slick';
+import MenuContainer from '../containers/MenuContainer';
 
 export default class Home extends Component {
   render() {
@@ -18,26 +19,29 @@ export default class Home extends Component {
     };
 
     return (
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
+      <div className="home-wrapper">
+        <MenuContainer />
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
     );
   }
 }
