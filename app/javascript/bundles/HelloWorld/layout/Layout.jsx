@@ -12,6 +12,9 @@ class Layout extends Component {
             <Link to="/" activeClassName="active">React Router 1</Link>
           </li>
           <li role="presentation">
+            <Link to="/roster" activeClassName="active">Roster</Link>
+          </li>
+          <li role="presentation">
             <Link to="/test_router2" activeClassName="active">React Router 2</Link>
           </li>
           <li role="presentation">

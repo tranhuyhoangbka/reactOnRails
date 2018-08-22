@@ -4,6 +4,7 @@ import Layout from '../layout/Layout';
 import TestRouter1 from '../components/TestRouter1';
 import TestRouter2 from '../components/TestRouter2';
 import TestRouter3 from '../components/TestRouter3';
+import Roster from '../components/Roster';
 
 const Routes = (props) => (
   <Layout>
@@ -11,6 +12,7 @@ const Routes = (props) => (
       <Route path="/" component={TestRouter1} exact />
       <Route path="/test_router2" component={TestRouter2} />
       <Route path="/test_router3" component={TestRouter3} />
+      <Route path="/roster" component={Roster} />
     </Switch>
   </Layout>
 );
